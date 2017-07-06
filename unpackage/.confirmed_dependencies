@@ -1,0 +1,34 @@
+{
+  "index.html": {
+    "href": "index.html",
+    "resources": [
+      "js/iscroll-probe.js",
+      "css/swiper-3.4.2.min.css",
+      "css/index.css",
+      "css/font/iconfont.css",
+      "js/template-native.js",
+      "js/swiper-3.4.2.min.js",
+      "js/index.js",
+      "img/1.jpg",
+      "img/2.jpg",
+      "img/3.jpg",
+      "img/4.jpg",
+      "css/font/iconfont.woff",
+      "js/zepto.min.js",
+      "img/wanzi.jpg",
+      "img/cat.jpg"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "html/login.html": {
+    "resources": [
+      "css/login.css",
+      "js/login.js",
+      "index.html"
+    ],
+    "refer": [
+      "index.html"
+    ]
+  }
+}

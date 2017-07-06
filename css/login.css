@@ -1,0 +1,46 @@
+*{margin: 0;padding: 0;box-sizing: border-box;outline: none;}
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 0.16rem;
+}
+header{
+	height: 0.88rem;
+	background: #0dc441;
+	color: white;
+	font-size: 0.34rem;
+	text-align: center;
+	line-height: 0.88rem;
+}
+section{
+	height: 4.4rem;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+section p{
+	height: 0.98rem;width:90%;
+}
+section p:nth-child(3){
+   line-height: 0.98rem;
+   font-size: 0.3rem;
+   color: #999999;
+}
+section p:nth-child(3) a{
+	color: #a3e9b7;
+}
+section input{border: none;
+height: 0.98rem;width: 100%;font-size: 0.3rem;
+border-bottom: 0.01rem solid #7f7f7f;}
+section button{
+	height: 0.9rem;
+	width: 90%;
+	background: #0dc441;
+	color: white;
+	text-align: center;
+	line-height: 0.9rem;
+	border: none;
+	border-radius: 0.05rem;
+	margin-top: 0.1rem;
+}

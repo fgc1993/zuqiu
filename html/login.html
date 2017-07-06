@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 50px;">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="../css/login.css">
+		<script>
+       (function (doc, win) {
+            var docEl = doc.documentElement,
+           // orientationchange 事件 用来监听手机屏幕的反转
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+              var clientWidth = docEl.clientWidth;//(window.innerWidth);UC 或者QQ 安卓4.0 以下原生浏览器下面是没有
+              if (!clientWidth) return;     
+               docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+            };
+          if (!doc.addEventListener) return;
+          win.addEventListener(resizeEvt, recalc, false);
+          //DOMContentLoaded dom 加载完成，onload 有什么区别 dom css js OK 才执行的
+          doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+	</script>
+</head>
+<body>
+	<header>足球圈-登录</header>
+	<section>
+      <p><input type="text" placeholder="手机号"></p>
+      <p><input type="password" placeholder="密码"></p>  
+      <p>还没有账号？点击立即<a href="#">注册</a></p> 
+      <button id="btn">提交</button>  
+      <button id="webo">使用微博登录</button>
+	</section>
+	</body>
+   <script src="https://unpkg.com/jquery@3.2.1"></script>
+   <script type="text/javascript" src="../js/login.js"></script>
+</html>
